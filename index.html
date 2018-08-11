@@ -3,10 +3,108 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/mainpagestyle.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="page-navigation">
+          <li><a href="#info">Информация</a></li>
+          <li><a href="#content">Фото и видео</a></li>
+          <li><a href="#mapstate">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a class="main-logo"><img src="img/mainlogo.img" alt="Логотип"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="conteiner">
+      <h1 class="visually-hidden">Sedona</h1>
+      <section class="main-information" id="info">
+        <h2 class="visually-hidden">Информация</h2>
+        <p class="main-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО ВНИМАНИЯ</p>
+        <p class="main-subtitle">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+        <section class="features">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="main-title-sidebar">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="main-subtitle-sidebar">- №1 -</p>
+              <p class="main-subtitle-sidebar">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <!-- <p class="features-background-sidebar"></p> ПСЕВДОКЛАСС  -->
+            </li>
+            <li class="features-item">
+              <h3 class="main-title-sidebar">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <p class="main-subtitle-sidebar">- №2 -</p>
+              <p class="main-subtitle-sidebar">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ</p>
+              <!-- <p class="features-background-sidebar"></p> ПСЕВДОКЛАСС  -->
+            </li>
+            <li class="features-item">
+              <h3 class="main-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+              <p class="main-subtitle">- №3 -</p>
+              <p class="main-subtitle">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+            </li>
+            <li class="features-item">
+              <h3 class="main-title">КРАСИВАЯ ДОРОГА</h3>
+              <p class="main-subtitle">- №4 -</p>
+              <p class="main-subtitle">ЕХАТЬ В СЕДОНУ ИЗ ЛАС ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+            </li>
+            <li class="features-item">
+              <h3 class="main-title">МАЛО ТУРИСТОВ</h3>
+              <p class="main-subtitle">- №5 -</p>
+              <p class="main-subtitle">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+            </li>
+          </ul>
+        </section>
+        <aside class="sidebar">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <h3 class="main-title">ЖИЛЬЁ</h3>
+              <p class="main-subtitle">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+            </li>
+            <li class="sidebar-item">
+              <h3 class="main-title">ЕДА</h3>
+              <p class="main-subtitle">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ</p>
+            </li>
+            <li class="sidebar-item">
+              <h3 class="main-title">СУВЕНИРЫ</h3>
+              <p class="main-subtitle">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА</p>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      <section class="search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+        <p class="main-subtitle">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <input type="button" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <!-- ПСЕВДОКЛАСС  -->
+      </section>
+      <section class="modal">
+        <h2 class="visually-hidden">Форма поиска</h2>
+        <form action="#" method="GET">
+          <label for="dateingo">ДАТА ЗАЕЗДА:<input type="date" name="ДАТА ЗАЕЗДА" id="dateingo"></label>
+          <label for="dateoutgo">ДАТА ВЫЕЗДА:<input type="date" name="ДАТА ВЫЕЗДА" id="dateoutgo"></label>
+          <label for="people">ВЗРОСЛЫЕ:<input type="number" name="ВЗРОСЛЫЕ" id="people" max="99" min="1" step="1"></label>
+          <label for="kids">ДЕТИ:<input type="number" name="ДЕТИ" id="kids" max="99" min="1" step="1"></label>
+          <input type="submit" id="search-button" value="НАЙТИ">
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="hashtag">#VISITSEDONA</p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </p>
+    </footer>
   </body>
 </html>
