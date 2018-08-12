@@ -21,21 +21,18 @@
       <h1 class="visually-hidden">Выбор отеля</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр отелей</h2>
+        <form action="/echo" method="GET">
         <fieldset class="filter-infrastructure">
           <legend class="filter-title">ИНФРАСТРУКТУРА:</legend>
-          <form class="filter-infrastructure-form" action="/echo" method="GET">
             <label class="filter-text" for="pool">БАССЕЙН<input type="checkbox" value="БАССЕЙН" id="pool"></label>
             <label class="filter-text" for="parking">ПАРКОВКА<input type="checkbox" value="ПАРКОВКА" id="parking"></label>
             <label class="filter-text" for="wifi">WI-FI<input type="checkbox" value="WI-FI" id="wifi"></label>
-          </form>
         </fieldset>
         <fieldset class="type-housing">
           <legend class="filter-title">ТИП ЖИЛЬЯ:</legend>
-          <form class="type-housing-form" action="/echo" method="GET">
             <label class="filter-text" for="hotel">ГОСТИНИЦА<input type="checkbox" value="ГОСТИНИЦА" id="hotel"></label>
             <label class="filter-text" for="motel">МОТЕЛЬ<input type="checkbox" value="МОТЕЛЬ" id="motel"></label>
             <label class="filter-text" for="apartment">АПАРТАМЕНТЫ<input type="checkbox" value="АПАРТАМЕНТЫ" id="apartment"></label>
-          </form>
         </fieldset>
         <fieldset class="cost-hotel">
           <legend class="filter-title">СТОИМОСТЬ В СУТКИ (Р):</legend>
@@ -43,6 +40,7 @@
           <input type="range" name="cost" id="cost" min="0" max="3000" value="2500">
           <input type="submit" value="ПОКАЗАТЬ" id="show-result">
         </fieldset>
+        </form>
         </section>
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка товаров</h2>
