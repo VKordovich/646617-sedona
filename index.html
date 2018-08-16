@@ -15,28 +15,28 @@
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
         <a class="main-logo">
-          <img src="img/index/1.header/logo-sedona.svg" width="140" height="72" alt="Логотип"> <!-- добавить размер лого  -->
+          <img src="img/index/logo-sedona.svg" width="140" height="72" alt="Логотип">
         </a>
       </nav>
     </header>
     <main class="conteiner">
       <h1 class="visually-hidden">Sedona</h1>
-      <img src="img/index/2.main/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в СЕДОНУ">
+      <img src="img/index/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в СЕДОНУ">
       <p class="main-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО ВНИМАНИЯ</p>
       <p class="main-subtitle">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
       <section class="features">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="features-item">
-              <h3 class="main-title-sidebar">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p class="main-subtitle-sidebar">- №1 -</p>
-              <p class="main-subtitle-sidebar">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <h3 class="main-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="main-subtitle">- №1 -</p>
+              <p class="main-subtitle">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               <!-- <p class="features-background-sidebar"></p> ПСЕВДОКЛАСС  -->
             </li>
             <li class="features-item">
-              <h3 class="main-title-sidebar">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-              <p class="main-subtitle-sidebar">- №2 -</p>
-              <p class="main-subtitle-sidebar">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ</p>
+              <h3 class="main-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <p class="main-subtitle">- №2 -</p>
+              <p class="main-subtitle">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ</p>
               <!-- <p class="features-background-sidebar"></p> ПСЕВДОКЛАСС  -->
             </li>
             <li class="features-item">
@@ -76,7 +76,7 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
         <p class="main-subtitle">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <input type="button" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">
+        <button type="submit" name="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
       <section class="map" id="mapstate">
         <h2 class="visually-hidden">Карта</h2>
@@ -84,12 +84,12 @@
       </section>
       <section class="modal">
         <h2 class="visually-hidden">Форма поиска</h2>
-        <form action="#" method="GET">
+        <form action="#" method="POST">
           <label for="dateingo">ДАТА ЗАЕЗДА:<input type="date" name="ДАТА ЗАЕЗДА" id="dateingo"></label>
           <label for="dateoutgo">ДАТА ВЫЕЗДА:<input type="date" name="ДАТА ВЫЕЗДА" id="dateoutgo"></label>
           <label for="people">ВЗРОСЛЫЕ:<input type="number" name="ВЗРОСЛЫЕ" id="people" max="99" min="1" step="1"></label>
           <label for="kids">ДЕТИ:<input type="number" name="ДЕТИ" id="kids" max="99" min="1" step="1"></label>
-          <input type="submit" id="search-button" value="НАЙТИ">
+          <button type="submit" name="Найти гостиницу">НАЙТИ</button>
         </form>
       </section>
     </main>
