@@ -80,15 +80,23 @@
       </section>
       <section class="map" id="mapstate">
         <h2 class="visually-hidden">Карта</h2>
-        <!-- ПСЕВДОКЛАСС  -->
+        <img src="img/map.png" width="1200" height="593" alt="Седона, Аризона, США">
       </section>
       <section class="modal">
         <h2 class="visually-hidden">Форма поиска</h2>
-        <form action="#" method="POST">
-          <label for="dateingo">ДАТА ЗАЕЗДА:<input type="date" name="ДАТА ЗАЕЗДА" id="dateingo"></label>
-          <label for="dateoutgo">ДАТА ВЫЕЗДА:<input type="date" name="ДАТА ВЫЕЗДА" id="dateoutgo"></label>
-          <label for="people">ВЗРОСЛЫЕ:<input type="number" name="ВЗРОСЛЫЕ" id="people" max="99" min="1" step="1"></label>
-          <label for="kids">ДЕТИ:<input type="number" name="ДЕТИ" id="kids" max="99" min="1" step="1"></label>
+        <form class="main-search" action="https://echo.htmlacademy.ru" method="GET">
+          <label for="dateingo">ДАТА ЗАЕЗДА:
+            <input type="text" name="ДАТА ЗАЕЗДА" id="dateingo" placeholder="01.12.2017">
+          </label>
+          <label for="dateoutgo">ДАТА ВЫЕЗДА:
+            <input type="text" name="ДАТА ВЫЕЗДА" id="dateoutgo" placeholder="08.12.2017">
+          </label>
+          <label for="people">ВЗРОСЛЫЕ:
+            <input type="number" name="ВЗРОСЛЫЕ" id="people" max="99" min="1" step="1">
+          </label>
+          <label for="kids">ДЕТИ:
+            <input type="number" name="ДЕТИ" id="kids" max="99" min="1" step="1">
+          </label>
           <button type="submit" name="Найти гостиницу">НАЙТИ</button>
         </form>
       </section>
@@ -97,9 +105,9 @@
       <p class="hashtag">#VISITSEDONA</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#" aria-label="Наша ссылка ВКонтакте">Вконтакте</a></li>
+          <li><a class="social-button" href="#" aria-label="Наша ссылка Фейсбук">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Наша ссылка Ютуб">YouTube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
