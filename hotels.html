@@ -26,27 +26,21 @@
         <form action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="filter-infrastructure">
             <legend class="filter-title">ИНФРАСТРУКТУРА:</legend>
-              <label class="filter-text" for="pool">БАССЕЙН
+              <label class="filter-text" for="pool">БАССЕЙН</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="БАССЕЙН" id="pool" checked>
-              </label>
-              <label class="filter-text" for="parking">ПАРКОВКА
+              <label class="filter-text" for="parking">ПАРКОВКА</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="ПАРКОВКА" id="parking">
-              </label>
-              <label class="filter-text" for="wifi">WI-FI
+              <label class="filter-text" for="wifi">WI-FI</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="WI-FI" id="wifi">
-              </label>
           </fieldset>
           <fieldset class="type-housing">
             <legend class="filter-title">ТИП ЖИЛЬЯ:</legend>
-              <label class="filter-text" for="hotel">ГОСТИНИЦА
+              <label class="filter-text" for="hotel">ГОСТИНИЦА</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="ГОСТИНИЦА" id="hotel" checked>
-              </label>
-              <label class="filter-text" for="motel">МОТЕЛЬ
+              <label class="filter-text" for="motel">МОТЕЛЬ</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="МОТЕЛЬ" id="motel" checked>
-              </label>
-              <label class="filter-text" for="apartment">АПАРТАМЕНТЫ
+              <label class="filter-text" for="apartment">АПАРТАМЕНТЫ</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="АПАРТАМЕНТЫ" id="apartment" checked>
-              </label>
           </fieldset>
           <fieldset class="cost-hotel">
             <legend class="filter-title">СТОИМОСТЬ В СУТКИ (Р):</legend>
@@ -58,13 +52,17 @@
         </section>
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка товаров</h2>
-          <p class="sorting-total">НАЙДЕНО:<output>3</output> </p>   <!-- нужно настроить вывод колличества найденных отелей-->
+          <p class="sorting-total">НАЙДЕНО:</p>
           <p class="sorting-text">Сортировка:</p>
           <ul class="sorting-list">
-            <li class="sorting-item sorting-text sorting-current">ПО ЦЕНЕ</li>
-            <li class="sorting-item sorting-text">ПО ТИПУ</li>
-            <li class="sorting-item sorting-text">ПО РЕЙТИНГУ</li>
+            <li class="sorting-item sorting-text sorting-current"><a href="#">ПО ЦЕНЕ</a></li>
+            <li class="sorting-item sorting-text"><a href="#">ПО ТИПУ</a></li> <!-- какой адрес-->
+            <li class="sorting-item sorting-text"><a href="#">ПО РЕЙТИНГУ</a></li>
           </ul>
+          <p class="sorting-direction">
+            <a class="sorting-up" href="#">по возрастанию</a>
+            <a class="sorting-down" href="#">по убыванию</a>
+          </p>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
