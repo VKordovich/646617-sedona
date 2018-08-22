@@ -1,0 +1,118 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;                                   /* хз как определил */
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a{
+  text-decoration: none;
+}
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: white;
+}
+.page-navigation,
+.footer-social ul{
+  list-style: none;
+}
+.page-navigation a{
+  color: #000000;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+}
+.page-navigation a:hover,
+.page-navigation a:focus{
+  color: #81b3d2;
+}
+.page-navigation a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+.page-current{
+  color: #766357;         /* что это  */
+}
+/* .main-logo{
+  position: relative;
+}*/
+.main-title{
+  font-size: 21px;
+  font-weight: 300;
+}
+.main-title,
+.main-subtitle,
+.search-title{
+  text-align: center;
+}
+.main-legend{
+  color: #000000;
+  line-height: 26px;
+  background-color:white;
+}
+.features-list,
+.additional-features-list{
+  line-height: 21px;
+  list-style: none;
+  background-color: #eeeeee;
+}
+.features-list li:nth-of-type(-n+2){
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.features-item p::after,
+.features-item p::before{
+  content: "-";
+}
+.additional-features-list{
+  color: #000000;
+  background-color: #ffffff;
+}
+.search{
+  background-color: #ffffff;
+}
+.search-title{
+  font-size: 30px;
+  line-height: 36px;
+
+}
+.modal-button{
+  padding: 34px 139px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+.modal-button:hover,
+.modal-button:focus{
+  background-color: #604e43;
+}
+.modal-button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.modal{
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+.modal-search input[type="text"]{
+  font: inherit;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+.main-footer{
+  background-color: rgba(255, 255, 255, 0.9)
+}
+.footer-social {
+  text-align: center;
+}
