@@ -13,13 +13,14 @@
         <ul class="page-navigation">
           <li><a class="page-current" href="#info">Информация</a></li>
           <li><a href="#content">Фото и видео</a></li>
+          <li class="visually-hidden"></li>
           <li><a href="#mapstate">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
-        <a class="main-logo">
-          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип">
-        </a>
       </nav>
+      <a class="main-logo">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип">
+      </a>
     </header>
     <main class="conteiner">
       <h1 class="visually-hidden">Sedona</h1>
@@ -89,20 +90,16 @@
       <section class="modal">
         <h2 class="visually-hidden">Форма поиска</h2>
         <form class="modal-search" action="https://echo.htmlacademy.ru" method="GET">
-          <label for="dateingo">Дата заезда:
+          <label for="dateingo">Дата заезда:</label>
             <input type="text" name="ДАТА ЗАЕЗДА" id="dateingo" placeholder="24 Апреля 2017">
-          </label>
-          <label for="dateoutgo">Дата выезда:
+          <label for="dateoutgo">Дата выезда:</label>
             <input type="text" name="ДАТА ВЫЕЗДА" id="dateoutgo" placeholder="4 Июля 2017">
-          </label>
-          <label for="people">Взрослые:
+          <label for="people">Взрослые:</label>
             <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2">
-          </label>
-          <label for="kids">Дети:
+          <label for="kids">Дети:</label>
             <input type="text" name="ДЕТИ" id="kids" placeholder="1">
-          </label>
-          <button type="submit" name="Найти гостиницу">Найти</button>
         </form>
+        <button type="submit" name="Найти гостиницу">Найти</button>
       </section>
     </main>
     <footer class="main-footer">
