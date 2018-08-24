@@ -22,12 +22,14 @@ a{
   background-color: white;
 }
 .page-navigation,
-.footer-social ul{
+.footer-social ul,
+.sorting-list{
   list-style: none;
 }
 .page-navigation a{
   color: #000000;
   font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 .page-navigation a:hover,
 .page-navigation a:focus{
@@ -44,7 +46,7 @@ a{
 }*/
 .main-title{
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 700;
 }
 .main-title,
 .main-subtitle,
@@ -81,6 +83,7 @@ a{
 .search-title{
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
 
 }
 .modal-button{
@@ -115,4 +118,70 @@ a{
 }
 .footer-social {
   text-align: center;
+}
+.hotels-page{
+  background-color: #f2f2f2;
+  background-image: none;
+}
+.filter form{
+  background-image: url(../img/background-photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.filter-infrastructure,
+.type-housing,
+.cost-hotel{
+  border: none;
+}
+.filter-title{
+  font-size: 21px;           /* ОПРЕДЕЛИТЬ ТЕКСТ ДОМА В ФОТОШоПАХ ВАШИХ */
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.sorting{
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+.sorting-text{
+  font-size: 14px;
+  line-height: 21px;
+}
+.sorting-item a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted blue;
+}
+.sorting-current a{
+  color:blue;
+  border: none;
+}
+.hashtag,
+.sorting-total,
+.catalog-item h3>a{
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.catalog-list{
+  background-color: #ffffff;
+  list-style: none;
+}
+.catalog-rating{
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.041);
+}
+/* need to find true color */
+.catalog-button-info{
+  padding: 5px 10px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgba(52, 191, 233, 0.473);
+}
+.catalog-button-reserve{
+  padding: 5px 10px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #503e33;
 }
