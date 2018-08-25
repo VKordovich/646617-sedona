@@ -80,7 +80,7 @@ a{
   content: "";
   width:1200px;
   height:59px;
-  margin-bottom: -3px;
+  margin-bottom: -3px;                              /*почему ты такой минус*/
   background-image: url("../img/intro-mask.svg");
 }
 .welcom-logo{
@@ -100,24 +100,49 @@ a{
   margin: 0px;
   margin-bottom: 25px;
 }
-.features-list,
-.additional-features-list{
+.features-list{
+  margin: 0px;
+  padding: 0px;
   line-height: 21px;
   list-style: none;
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
-.features-list li:nth-of-type(-n+2){
-  line-height: 21px;
+.features-list>li:nth-of-type(-n+3){
+ line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
+  width: 400px;
+}
+.features-list>li:nth-of-type(2),
+.features-list>li:nth-of-type(4){
+  background-color: #ffffff;
+  width: 1200px;
+}
+.features-list>li:first-child{
+  align-self: flex-start;
+}
+.features-list>li:nth-child(3){
+  align-self: flex-end;
+}
+.additional-features-list{
+  padding: 0px;
+  list-style: none;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+.additional-features-item{
+  color: #000000;
+  background-color: #ffffff;
+}
+.features-list>li:last-child .additional-features-item{
+  background-color: #eeeeee;
 }
 .features-item p::after,
 .features-item p::before{
   content: "-";
-}
-.additional-features-list{
-  color: #000000;
-  background-color: #ffffff;
 }
 .search{
   background-color: #ffffff;
@@ -126,7 +151,6 @@ a{
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-
 }
 .modal-button{
   padding: 30px 139px;
