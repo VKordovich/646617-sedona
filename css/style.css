@@ -146,6 +146,14 @@ a{
 }
 .search{
   background-color: #ffffff;
+  min-height: 300px;
+}
+
+/* ОПРЕДЕЛИТЬ РАЗМЕРЫЫЫЫЫЫЫ ........................................................................................................*/
+.search-conteiner{
+  width: 520px;
+  margin: 0px auto;
+  margin-bottom: 60px;
 }
 .search-title{
   font-size: 30px;
@@ -159,6 +167,12 @@ a{
   line-height: 26px;
   color: #ffffff;
   background-color: #766357;
+  display: block;
+  box-sizing: border-box;
+  height: 90px;
+  width: 660px;
+  margin: 0px auto;
+  text-align: center;
 }
 .modal-button:hover,
 .modal-button:focus{
@@ -169,19 +183,43 @@ a{
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+/* РАЗМЕРЫ............................................................................ */
 .modal{
   font-size: 14px;
   line-height: 26px;
   background-color: #ffffff;
   font-weight: 700;
+  box-sizing: border-box;
+  width: 660px;
+  min-height: 250px;      /* ВОПРос  */
+  margin: 0px auto;
+}
+.modal-container{
+  width: 450px;
+  margin: 0px auto;
+}
+.modal-search{
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-search label{
+  flex-basis: 130px;
 }
 .modal-search input[type="text"]{
-  padding: 5px 171px 5px 12px;
   font: inherit;
+  width: 240px;
   text-transform: uppercase;
   color: #000000;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.column-people input[type="text"]{
+  width: 60px;
+}
+.column-people label:nth-child(3){
+  text-align: center;
 }
 .modal-search input[type="text"]:hover,
 .modal-search input[type="text"]:focus{
@@ -191,6 +229,11 @@ a{
 .modal-search input[type="text"]:active{
   background-color:#ffffff;
 }
+.column-people{
+  width: 450px;
+  display: flex;
+  
+}
 .modal button{
   padding: 12px 135px 18px;
   text-transform: inherit;
@@ -199,6 +242,8 @@ a{
   line-height: 26px;
   color: #ffffff;
   background-color: #81b3d2;
+  display: block;
+  margin: 0px auto;
 }
 .modal button:hover,
 .modal button:focus{
@@ -210,10 +255,22 @@ a{
   background-color: #5496bd;
 }
 .main-footer{
-  background-color: rgba(255, 255, 255, 0.9)
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .footer-social {
   text-align: center;
+}
+.footer-social ul{
+  padding: 0px;
+  margin: 0px;
+  width: 200px; /* ВРЕМЕННО*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .hotels-page{
   background-color: #f2f2f2;

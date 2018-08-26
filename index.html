@@ -85,8 +85,10 @@
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p class="search-title">Заинтересовались?</p>
-        <p class="main-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="search-conteiner">
+          <p class="search-title">Заинтересовались?</p>
+          <p class="main-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
         <a class="modal-button" href="#">Поиск гостиницы в седоне</a>
       </section>
       <section class="map" id="mapstate">
@@ -95,17 +97,21 @@
       </section>
       <section class="modal">
         <h2 class="visually-hidden">Форма поиска</h2>
-        <form class="modal-search" action="https://echo.htmlacademy.ru" method="GET">
-          <label for="dateingo">Дата заезда:</label>
+        <div class="modal-container">
+          <form class="modal-search" action="https://echo.htmlacademy.ru" method="GET">
+            <label for="dateingo">Дата заезда:</label>
             <input type="text" name="ДАТА ЗАЕЗДА" id="dateingo" placeholder="24 Апреля 2017">
-          <label for="dateoutgo">Дата выезда:</label>
+            <label for="dateoutgo">Дата выезда:</label>
             <input type="text" name="ДАТА ВЫЕЗДА" id="dateoutgo" placeholder="4 Июля 2017">
-          <label for="people">Взрослые:</label>
-            <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2">
-          <label for="kids">Дети:</label>
-            <input type="text" name="ДЕТИ" id="kids" placeholder="1">
-        </form>
-        <button type="submit" name="Найти гостиницу">Найти</button>
+            <div class="column-people">
+              <label for="people">Взрослые:</label>
+              <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2">
+              <label for="kids">Дети:</label>
+              <input type="text" name="ДЕТИ" id="kids" placeholder="1">
+            </div>  
+          </form>
+          <button type="submit" name="Найти гостиницу">Найти</button>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
