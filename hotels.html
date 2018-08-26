@@ -48,23 +48,25 @@
             <legend class="filter-title">СТОИМОСТЬ В СУТКИ (Р):</legend>
             <p class="range-cost"><span class="filter-text">ОТ 0</span><span class="filter-text">ДО 3000</span></p>
             <input type="range" name="cost" id="cost" min="0" max="3000" value="2500">
+            <button type="submit" name="Результат поиска">ПОКАЗАТЬ</button>
           </fieldset>
-          <button type="submit" name="Результат поиска">ПОКАЗАТЬ</button>
         </form>
         </section>
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка товаров</h2>
-          <p class="sorting-total">НАЙДЕНО:</p>
-          <p class="sorting-text">Сортировка:</p>
-          <ul class="sorting-list">
-            <li class="sorting-item sorting-text sorting-current"><a href="#">ПО ЦЕНЕ</a></li>
-            <li class="sorting-item sorting-text"><a href="#">ПО ТИПУ</a></li> <!-- какой адрес-->
-            <li class="sorting-item sorting-text"><a href="#">ПО РЕЙТИНГУ</a></li>
-          </ul>
-          <p class="sorting-direction">
-            <a class="sorting-up" href="#"><span class="visuall-hidden">по возрастанию</span></a>
-            <a class="sorting-down" href="#"><span class="visuall-hidden">по убыванию</span></a>
-          </p>
+          <div class="column-sorting">
+            <p class="sorting-total">НАЙДЕНО:</p>
+            <p class="sorting-text">Сортировка:</p>
+            <ul class="sorting-list">
+              <li class="sorting-item sorting-text sorting-current"><a href="#">ПО ЦЕНЕ</a></li>
+              <li class="sorting-item sorting-text"><a href="#">ПО ТИПУ</a></li> <!-- какой адрес-->
+              <li class="sorting-item sorting-text"><a href="#">ПО РЕЙТИНГУ</a></li>
+            </ul>
+            <p class="sorting-direction">
+              <a class="sorting-up" href="#"><span class="visuall-hidden">по возрастанию</span></a>
+              <a class="sorting-down" href="#"><span class="visuall-hidden">по убыванию</span></a>
+            </p>
+        </div>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
