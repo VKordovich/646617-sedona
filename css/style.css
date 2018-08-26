@@ -42,8 +42,7 @@ a{
   left: 530px;
 }
 .page-navigation,
-.footer-social ul,
-.sorting-list{
+.footer-social ul{
   list-style: none;
 }
 .page-navigation a{
@@ -232,7 +231,7 @@ a{
 .column-people{
   width: 450px;
   display: flex;
-  
+
 }
 .modal button{
   padding: 12px 135px 18px;
@@ -309,21 +308,37 @@ a{
   font-size: 14px;
   line-height: 21px;
   background-color: #ffffff;
+  border-bottom: 1px solid #f6f6f6;
 }
+/* .................................................................how does it work????????????? */
 .column-sorting{
   display: flex;
+  padding: 0px 71px;
 }
 .sorting-text{
   font-size: 14px;
   line-height: 21px;
 }
+.column-sorting>p:nth-of-type(-n+2){
+  margin-right: 41px;
+}
+.sorting-list{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
 .sorting-item a{
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
+  margin-right: 31px;
 }
 .sorting-current a{
   color:#81b3d2;
   border: none;
+}
+.sorting-direction{
+  margin-left: auto;
 }
 .hashtag,
 .sorting-total,
