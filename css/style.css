@@ -280,18 +280,21 @@ a{
   background-image: url(../img/background-photo.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
 .filter form{
   display: flex;
-  justify-content: space-around;
   flex-grow: 2;
 }
 .filter fieldset{
   display: flex;
   flex-direction: column;
+  margin-right: 100px;
+  padding: 0px;
 }
 .filter .cost-hotel{
   margin-right: 0px;
+  margin-left: auto;
 }
 .filter-infrastructure,
 .type-housing,
@@ -299,7 +302,7 @@ a{
   border: none;
 }
 .filter-title{
-  font-size: 21px;           /* ОПРЕДЕЛИТЬ ТЕКСТ ДОМА В ФОТОШоПАХ ВАШИХ */
+  font-size: 14px;           /* ОПРЕДЕЛИТЬ ТЕКСТ ДОМА В ФОТОШоПАХ ВАШИХ */
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
@@ -313,7 +316,6 @@ a{
 /* .................................................................how does it work????????????? */
 .column-sorting{
   display: flex;
-  padding: 0px 71px;
 }
 .sorting-text{
   font-size: 14px;
@@ -348,15 +350,21 @@ a{
   font-weight: 700;
   color: #000000;
 }
+.catalog{
+  background-color: #ffffff;
+  border: 1px solid transparent;
+}
 .catalog-list{
   background-color: #ffffff;
   list-style: none;
+  padding: 0px;
 }
 .catalog-cost{
   color: #333333;
 }
 .catalog-rating{
   padding: 5px 10px;
+  margin-left: auto;
   color: #666666;
   background-color: #f2f2f2;
 }
@@ -387,4 +395,18 @@ a{
 .catalog-button-reserve:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+.catalog-item{
+  display: flex;
+}
+.catalog-item p:nth-of-type(1){
+  order: -1;
+  margin-right: 41px;
+}
+.column-two{
+  margin-right: 41px;
+}
+.container{
+  width: 1070px;
+  margin: 30px auto;
 }
