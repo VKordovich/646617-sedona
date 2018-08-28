@@ -4,7 +4,7 @@ body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 300;                                   /* хз как определил */
+  font-weight: 400;                                   /* хз как определил */
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
@@ -43,6 +43,7 @@ a{
   top: 0%;
   left: 50%;
   margin-left:-70px;
+  margin-top: -1px;
 }
 .page-navigation,
 .footer-social ul{
@@ -64,12 +65,16 @@ a{
   color: #766357;         /* что это  */
 }
 .main-title{
+  margin: 0px;
+  margin-bottom: 25px;
   font-size: 21px;
   font-weight: 700;
 }
 .main-title,
 .main-subtitle,
 .search-title{
+  margin: 0px;
+  margin-bottom: 25px;
   text-align: center;
 }
 .main-legend{
@@ -97,6 +102,8 @@ a{
 .column-title{
   background-color: #ffffff;
   padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -116,15 +123,9 @@ a{
   flex-direction: column;
 }
 .features-list>li:nth-of-type(-n+3){
- line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
-  width: 400px;
-}
-.features-list>li:nth-of-type(2),
-.features-list>li:nth-of-type(4){
-  background-color: #ffffff;
-  width: 1200px;
+  width: 300px;
 }
 .features-list>li:first-child{
   align-self: flex-start;
@@ -135,24 +136,68 @@ a{
 .additional-features-list{
   padding: 0px;
   list-style: none;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
 .additional-features-item{
   color: #000000;
   background-color: #ffffff;
+  box-sizing: border-box;
+  width: 400px;
+  position: relative;
+}
+.additional-features-list .additional-features-item{
+  padding: 40px 70px;
+}
+.features-item:nth-of-type(4) .additional-features-item:nth-of-type(3){
+  padding: 40px 72px;
+  /* ИЛИ <br>???????? */
+}
+.features-item:nth-of-type(2) .additional-features-item{
+  padding: 160px 50px 85px;
+}
+.features-item:nth-of-type(2) .additional-features-item::before{
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+}
+/* При переполнении изображение двидется вместе с блоком */
+.features-item:nth-of-type(2) .additional-features-item:nth-of-type(1)::before{
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 18%;
+  margin-left: -40px;
+}
+.features-item:nth-of-type(2) .additional-features-item:nth-of-type(2)::before{
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 18%;
+  margin-left: -35px;
+}
+.features-item:nth-of-type(2) .additional-features-item:nth-of-type(3)::before{
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 18%;
+  margin-left: -35px;
 }
 .features-list>li:last-child .additional-features-item{
   background-color: #eeeeee;
 }
 .features-item{
   position: relative;
+  min-height: 146px;
+  padding: 43px 50px;
 }
 .features-item:nth-of-type(1)::after{
   content: "";
   background-image: url("../img/background-features-1.jpg");
-  background-position: 50% 50%;
+  background-position: 50% 59%;
+  background-repeat: no-repeat;
   width: 200%;
   height: 100%;
   position: absolute;
@@ -162,12 +207,18 @@ a{
 .features-item:nth-of-type(3)::after{
   content: "";
   background-image: url("../img/background-features-2.jpg");
-  background-position: 50% 50%;
+  background-position: 50% 55%;
   width: 200%;
   height: 100%;
   position: absolute;
   right: 100%;
   top: 0%;
+}
+.features-list>li:nth-of-type(2),
+.features-list>li:nth-of-type(4){
+  padding: 0px;
+  background-color: #ffffff;
+  width: 1200px;
 }
 .search{
   background-color: #ffffff;
