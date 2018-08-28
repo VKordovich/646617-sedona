@@ -8,9 +8,6 @@ body{
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
-  background-image: url("../img/background-photo.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
   width: 1200px;
   position: relative;
 }
@@ -30,6 +27,7 @@ a{
   height: 56px;
 }
 .page-navigation{
+  margin: auto 0px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
@@ -75,6 +73,9 @@ a{
 .main-legend{
   color: #000000;
   line-height: 26px;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -88,7 +89,7 @@ a{
 .welcom-logo{
   align-self:center;
   order: -1;
-  margin-top: 70px;
+  margin-top: 76px;
   margin-bottom: 21px;
 }
 .column-title{
@@ -282,7 +283,7 @@ a{
   background-image: none;
 }
 .filter{
-  background-image: url(../img/background-photo.jpg);
+  background-image: url(../img/background-hotels.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   padding-top: 1px;
