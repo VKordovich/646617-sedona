@@ -37,7 +37,6 @@ a{
   text-align: center;
 }
 .main-logo{
-  display: inline-block;
   position: absolute;
   font-size: 0px;
   top: 0%;
@@ -103,14 +102,10 @@ a{
   background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 30px;
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
 }
 .column-title>p{
   width: 520px;
-  margin: 0px;
+  margin: 0px auto;
   margin-bottom: 25px;
 }
 .features-list{
@@ -391,7 +386,7 @@ a{
   width: 37px;
   height: 25px;
   background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   position: absolute;
   top: 0%;
   left: 0%;
