@@ -358,15 +358,13 @@ a{
   background-image: url(../img/background-hotels.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-top: 1px;
+  padding: 1px 0px;
 }
 .filter form{
   display: flex;
-  flex-grow: 2;
 }
 .filter fieldset{
   display: flex;
-  flex-direction: column;
   margin-right: 100px;
   padding: 0px;
 }
@@ -377,16 +375,119 @@ a{
 .filter-infrastructure,
 .type-housing,
 .cost-hotel{
+  color: #ffffff;
+  min-width: 130px;
   border: none;
+}
+.filter-infrastructure label,
+.type-housing label{
+  position: relative;
+  margin-left: 35px;
+  margin-bottom: 30px;
+}
+.filter-infrastructure label::before,
+.type-housing label::before{
+  content: "";
+  width: 37px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat; 
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-top: -3px;
+  margin-left: -35px;
+}
+input:checked+label::before{
+  background-image: url("../img/checkbox-on.svg");
 }
 .filter-title{
   font-size: 14px;           /* ОПРЕДЕЛИТЬ ТЕКСТ ДОМА В ФОТОШоПАХ ВАШИХ */
   line-height: 26px;
+  margin-bottom: 9px;
   font-weight: 700;
   color: #ffffff;
 }
-.sorting{
+.cost-monitor{
+  width: 330px;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+.cost-monitor{
+  display: inline-block;
   font-size: 14px;
+  line-height: 38px;
+  position: relative;
+}
+.cost-monitor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+.cost-monitor .min-price,
+.cost-monitor .max-price{
+  width: 90px;
+  padding-left: 65px;
+}
+.cost-monitor input{
+  width: 50px;
+  color: inherit;
+  background: none;
+  border: none;
+}
+.cost-range {
+  position: relative;
+  margin-bottom: 32px;
+}
+.cost-range .scale{
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.cost-range .bar{
+  height: 2px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 1);
+}
+.range-toggle{
+  width: 3px;
+  height: 3px;
+  background-color:#ababab;
+  border:8px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+}
+.range-toggle:hover{
+  background-color:#1c4f80;
+}
+.range-toggle-min{
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+.range-toggle-max{
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.cost-hotel button{
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+.sorting{
+  padding-top: 1px;
+  font-size: 16px;
   line-height: 21px;
   background-color: #ffffff;
   border-bottom: 1px solid #f6f6f6;
