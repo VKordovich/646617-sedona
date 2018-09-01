@@ -10,6 +10,7 @@ body{
   background-color: #f2f2f2;
   width: 1200px;
   position: relative;
+  box-shadow: 0px 0 20px 6px black;
 }
 a{
   text-decoration: none;
@@ -217,15 +218,15 @@ a{
 }
 .search{
   background-color: #ffffff;
-  min-height: 300px;
+  min-height: 291px;
 }
 
 /* ОПРЕДЕЛИТЬ РАЗМЕРЫЫЫЫЫЫЫ ........................................................................................................*/
 .search-conteiner{
   width: 520px;
   margin: 0px auto;
-  margin-bottom: 60px;
-  padding-top: 12px;
+  margin-bottom: 54px;
+  padding-top: 50px;
 }
 .search-title{
   font-size: 30px;
@@ -233,16 +234,13 @@ a{
   font-weight: 700;
 }
 .modal-button{
-  padding: 30px 139px;
-  text-transform: inherit;
+  padding: 30px 84px;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   background-color: #766357;
   display: block;
-  box-sizing: border-box;
-  height: 90px;
-  width: 660px;
+  width: 400px;
   margin: 0px auto;
   text-align: center;
 }
@@ -255,18 +253,29 @@ a{
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
-/* РАЗМЕРЫ............................................................................ */
+.modal-window{
+  position: relative;
+}
 .modal{
   font-size: 14px;
   line-height: 26px;
   background-color: #ffffff;
   font-weight: 700;
   box-sizing: border-box;
-  width: 660px;
-  min-height: 250px;      /* ВОПРос  */
+  width: 568px;
+  min-height: 395px;      /* ВОПРос  */
   margin: 0px auto;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-left: -284px; 
+  visibility: visible;
+}
+.modal-button:hover .modal{
+  visibility: hidden;
 }
 .modal-container{
+  padding: 50px 0px;
   width: 450px;
   margin: 0px auto;
 }
@@ -275,20 +284,79 @@ a{
   flex-wrap: wrap;
 }
 .modal-search label{
-  flex-basis: 130px;
+  flex-basis: 113px;
+  position: relative;
+  align-self: flex-start;
+  padding: 9px 0px;
+  position: relative;
+}
+.modal-search>label::after{
+  content: "";
+  width: 23px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -290%;
 }
 .modal-search input[type="text"]{
-  font: inherit;
+  padding: 7px 40px 7px 12px;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
   width: 240px;
   text-transform: uppercase;
   color: #000000;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   flex-grow: 1;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
+}
+.column-people{
+  width: 450px;
+  display: flex;
+  position: relative;
 }
 .column-people input[type="text"]{
   width: 60px;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-right: 10px;
+}
+.column-people label::after,
+.column-people label::before{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.column-people label::after{
+  top: 48%;
+  right: -85%;
+}
+.column-people label::before{
+  top: 48%;
+  right: -25%;
+}
+.column-people::after,
+.column-people::before{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: rotate(90deg);
+}
+.column-people::after{
+  top: 21px;
+  right: 16px;
+}
+.column-people::before{
+  top: 21px;
+  left: 197px;
 }
 .column-people label:nth-child(3){
   text-align: center;
@@ -301,11 +369,6 @@ a{
 .modal-search input[type="text"]:active{
   background-color:#ffffff;
 }
-.column-people{
-  width: 450px;
-  display: flex;
-
-}
 .modal button{
   padding: 12px 135px 18px;
   text-transform: inherit;
@@ -315,6 +378,7 @@ a{
   color: #ffffff;
   background-color: #81b3d2;
   display: block;
+  width: 100%;
   margin: 0px auto;
 }
 .modal button:hover,
@@ -329,9 +393,12 @@ a{
 .main-footer{
   background-color: rgba(255, 255, 255, 0.9);
   height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  bottom: 0%;
 }
 .footer-social {
   text-align: center;
