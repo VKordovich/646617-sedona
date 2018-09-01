@@ -268,14 +268,14 @@ a{
   position: absolute;
   top: 0%;
   left: 50%;
-  margin-left: -284px; 
+  margin-left: -284px;
   visibility: visible;
 }
 .modal-button:hover .modal{
   visibility: hidden;
 }
 .modal-container{
-  padding: 50px 0px;
+  padding: 48px 0px;
   width: 450px;
   margin: 0px auto;
 }
@@ -320,10 +320,11 @@ a{
   position: relative;
 }
 .column-people input[type="text"]{
-  width: 60px;
+  width: 10px;
   margin-bottom: 55px;
   text-align: center;
-  padding-right: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .column-people label::after,
 .column-people label::before{
@@ -331,7 +332,7 @@ a{
   position: absolute;
   width: 12px;
   height: 3px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #a9a9a9;
 }
 .column-people label::after{
   top: 48%;
@@ -347,7 +348,7 @@ a{
   position: absolute;
   width: 12px;
   height: 3px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #a9a9a9;
   transform: rotate(90deg);
 }
 .column-people::after{
@@ -363,7 +364,7 @@ a{
 }
 .modal-search input[type="text"]:hover,
 .modal-search input[type="text"]:focus{
-  background-color: ebebeb;
+  background-color: #ebebeb;
   outline: none;
 }
 .modal-search input[type="text"]:active{
@@ -402,14 +403,64 @@ a{
 }
 .footer-social {
   text-align: center;
+  min-width: 240px;
+}
+.hashtag{
+  min-width: 240px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
 }
 .footer-social ul{
   padding: 0px;
-  margin: 0px;
-  width: 200px; /* ВРЕМЕННО*/
+  margin: 0px auto;
+  width: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.footer-social li{
+  font-size: 0px;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+.footer-social li:first-of-type{
+  background-image: url(..//img/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-social li:nth-of-type(2){
+  background-image: url(..//img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-social li:nth-of-type(3){
+  background-image: url(..//img/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-copyright{
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer-copyright a{
+  font-size: 0px;
+  width: 115px;
+  height: 41px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+}
+.footer-copyright::before{
+  content: "website by";
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 8px;
+  text-transform: uppercase;
 }
 /* ВНУТРЕННЯЯ СТРАНИЦА..................................................................... */
 .hotels-page{
@@ -583,7 +634,6 @@ input:checked+label::before{
 .sorting-direction{
   margin-left: auto;
 }
-.hashtag,
 .sorting-total,
 .catalog-item h3>a{
   font-size: 30px;
