@@ -35,7 +35,7 @@
               <input class="visually-hidden filter-checkbox" type="checkbox" name="ПАРКОВКА" id="parking">
               <label class="filter-text" for="parking">ПАРКОВКА</label>
               <input class="visually-hidden filter-checkbox" type="checkbox" name="WI-FI" id="wifi">
-              <label class="filter-text" for="wifi">WI-FI</label> 
+              <label class="filter-text" for="wifi">WI-FI</label>
             </fieldset>
             <fieldset class="type-housing">
               <legend class="filter-title">ТИП ЖИЛЬЯ:</legend>
@@ -50,19 +50,19 @@
               <legend class="filter-title">СТОИМОСТЬ В СУТКИ (Р):</legend>
               <div class="cost-monitor">
                 <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>   
-              </div> 
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
               <div class="cost-range">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
-              </div>  
+              </div>
               <button type="submit" name="Результат поиска">ПОКАЗАТЬ</button>
             </fieldset>
           </form>
-        </div>  
+        </div>
         </section>
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка товаров</h2>
@@ -76,8 +76,14 @@
                 <li class="sorting-item sorting-text"><a href="#">ПО РЕЙТИНГУ</a></li>
               </ul>
               <p class="sorting-direction">
-                <a class="sorting-up" href="#"><span class="visuall-hidden">по возрастанию</span></a>
-                <a class="sorting-down" href="#"><span class="visuall-hidden">по убыванию</span></a>
+                <a class="sorting-up" href="#">
+                  <span class="visually-hidden">по возрастанию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a>
+                <a class="sorting-down current-choice" href="#">
+                  <span class="visually-hidden current-choice">по убыванию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                </a>
               </p>
         </div>
         </div>
@@ -115,7 +121,7 @@
                   <h3><a href="#">VILLAS AT POCO DIABLO</a></h3>
                   <p class="catalog-cost">АПАРТАМЕНТЫ <span>ОТ 2000 Р.</span></p>
                   <a class="catalog-button-info" href="#">Подробнее</a>
-                  <a class="catalog-button-reserve" href="#">Забронировать</a> 
+                  <a class="catalog-button-reserve" href="#">Забронировать</a>
                 </div>
                 <p><img src="img/villas.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO"></p>
                 <p class="catalog-rating">РЕЙТИНГ: 9,2</p>  <!-- с помощью псевдоклассов -->
