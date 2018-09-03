@@ -18,6 +18,7 @@ a{
 .container{
   width: 1070px;
   margin: 30px auto;
+  margin-bottom: 0px;
 }
 .main-navigation{
   font-size: 14px;
@@ -290,15 +291,22 @@ a{
   padding: 9px 0px;
   position: relative;
 }
-.modal-search>label::after{
-  content: "";
+.modal-search svg{
   width: 23px;
   height: 24px;
   background-color: transparent;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
   position: absolute;
   right: -290%;
+}
+.modal-search path{
+  fill: rgba(0, 0, 0, 0.3);
+}
+.modal-search svg:hover path,
+.modal-search svg:focus path{
+  fill: rgb(0, 0, 0);
+}
+.modal-search svg:active path{
+  fill: #81b3d2;
 }
 .modal-search input[type="text"]{
   padding: 7px 40px 7px 12px;
@@ -313,6 +321,14 @@ a{
   border: 2px solid #f2f2f2;
   flex-grow: 1;
   margin-bottom: 29px;
+}
+.modal-search input[type="text"]:hover{
+  background-color: #dfdddd;
+  border: 2px solid #dfdddd;
+}
+.modal-search input[type="text"]:focus{
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
 }
 .column-people{
   width: 450px;
@@ -401,6 +417,14 @@ a{
   position: absolute;
   bottom: 0%;
 }
+.hotels-footer{
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .footer-social {
   text-align: center;
   min-width: 240px;
@@ -422,25 +446,26 @@ a{
   align-items: center;
 }
 .footer-social li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0px;
   font-size: 0px;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
 }
-.footer-social li:first-of-type{
-  background-image: url(..//img/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social li:hover,
+.footer-social li:focus{
+  background-color: #669ec0;
+  outline: none;
 }
-.footer-social li:nth-of-type(2){
-  background-image: url(..//img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social li:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
-.footer-social li:nth-of-type(3){
-  background-image: url(..//img/youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.footer-social li:active path{
+  fill:rgba(255, 255, 255, 0.3);
 }
 .footer-copyright{
   min-width: 240px;
@@ -449,11 +474,15 @@ a{
   justify-content: flex-end;
 }
 .footer-copyright a{
-  font-size: 0px;
   width: 115px;
   height: 41px;
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
+}
+.button:hover path,
+.button:focus path{
+  fill: #81b3d2;
+}
+.button:active path{
+  fill: rgba(0, 0, 0, 0.3);
 }
 .footer-copyright::before{
   content: "website by";
@@ -471,7 +500,7 @@ a{
   background-image: url(../img/background-hotels.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding: 1px 0px;
+  border-top: 1px solid transparent;
 }
 .filter form{
   display: flex;
@@ -599,15 +628,18 @@ input:checked+label::before{
   border-radius: 2px;
 }
 .sorting{
-  padding-top: 1px;
   font-size: 16px;
   line-height: 21px;
   background-color: #ffffff;
   border-bottom: 1px solid #f6f6f6;
 }
+.sorting .container{
+  margin: 0px auto;
+}
 /* .................................................................how does it work????????????? */
 .column-sorting{
   display: flex;
+  align-items: center;
 }
 .sorting-text{
   font-size: 14px;
