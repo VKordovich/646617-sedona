@@ -666,6 +666,19 @@ input:checked+label::before{
 .sorting-direction{
   margin-left: auto;
 }
+.sorting-direction path{
+  fill: #cacaca;
+}
+.sorting-direction svg:hover path,
+.sorting-direction svg:focus path{
+  fill: #231f20;
+}
+.sorting-direction svg:active path{
+  fill: #81b3d2;
+}
+.current-choice svg:active path{
+  fill: #81b3d2;
+}
 .sorting-total,
 .catalog-item h3>a{
   font-size: 30px;
@@ -687,9 +700,11 @@ input:checked+label::before{
 }
 .catalog-rating{
   padding: 5px 10px;
+  margin: 0px;
   margin-left: auto;
   color: #666666;
   background-color: #f2f2f2;
+  align-self: flex-end;
 }
 .catalog-button-info{
   padding: 5px 17px;
@@ -729,11 +744,16 @@ input:checked+label::before{
 .catalog-item p:nth-of-type(1){
   order: -1;
   margin-right: 41px;
+  line-height: 0px;
 }
 .column-two{
-  margin-right: 41px;
+  margin: 14px 41px 14px 0px;
 }
-
+.column-two h3,
+.column-two p{
+  margin: 0px;
+  margin-bottom: 10px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
