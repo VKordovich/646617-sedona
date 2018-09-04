@@ -367,6 +367,40 @@ a {
   align-self: flex-start;
   padding: 9px 0;
 }
+.people-sign,
+.kids-sign{
+  position: relative;
+}
+.people-sign > .minus,
+.kids-sign > .minus{
+  position: absolute;
+  top: 21px;
+  left: 11px;
+  width: 11px;
+  height: 3px;
+  cursor: pointer;
+}
+.people-sign > .plus,
+.kids-sign > .plus{
+  position: absolute;
+  top: 15px;
+  left: 85px;
+  width: 13px;
+  height: 15px;
+  cursor: pointer;
+}
+.minus:hover rect{
+  fill: rgb(0, 0, 0);
+}
+.plus:hover rect{
+  fill: rgb(0, 0, 0);
+}
+.minus:active rect{
+  fill: #81b3d2;
+}
+.plus:active rect{
+  fill: #81b3d2;
+}
 .modal-search svg {
   position: absolute;
   right: -290%;
@@ -375,6 +409,7 @@ a {
   height: 24px;
 
   background-color: transparent;
+  cursor: pointer;
 }
 .modal-search path {
   fill: rgba(0, 0, 0, 0.3);
@@ -424,44 +459,7 @@ a {
 
   text-align: center;
 }
-.column-people label::after,
-.column-people label::before {
-  content: "";
-  position: absolute;
-
-  width: 12px;
-  height: 3px;
-
-  background-color: #a9a9a9;
-}
-.column-people label::after {
-  top: 21px;
-  right: -98px;
-}
-.column-people label::before {
-  top: 21px;
-  left: 199px;
-  transform: rotate(90deg);
-}
-.column-people::after,
-.column-people::before {
-  content: "";
-  position: absolute;
-
-  width: 12px;
-  height: 3px;
-
-  background-color: #a9a9a9;
-}
-.column-people::after {
-  top: 21px;
-  right: 84px;
-}
-.column-people::before {
-  top: 21px;
-  left: 127px;
-}
-.column-people label:nth-child(3) {
+.column-people label:nth-of-type(2) {
   text-align: center;
 }
 .modal-search input[type="text"]:hover,
