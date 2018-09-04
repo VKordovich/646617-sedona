@@ -362,7 +362,6 @@ a {
 }
 .modal-search label {
   position: relative;
-  position: relative;
 
   flex-basis: 113px;
   align-self: flex-start;
@@ -436,12 +435,13 @@ a {
   background-color: #a9a9a9;
 }
 .column-people label::after {
-  top: 48%;
-  right: -85%;
+  top: 21px;
+  right: -98px;
 }
 .column-people label::before {
-  top: 48%;
-  right: -25%;
+  top: 21px;
+  left: 199px;
+  transform: rotate(90deg);
 }
 .column-people::after,
 .column-people::before {
@@ -452,15 +452,14 @@ a {
   height: 3px;
 
   background-color: #a9a9a9;
-  transform: rotate(90deg);
 }
 .column-people::after {
   top: 21px;
-  right: 16px;
+  right: 84px;
 }
 .column-people::before {
   top: 21px;
-  left: 197px;
+  left: 127px;
 }
 .column-people label:nth-child(3) {
   text-align: center;
