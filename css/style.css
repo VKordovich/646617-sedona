@@ -13,7 +13,7 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  box-shadow: 0 0 20px 6px black;
+  box-shadow: 0 0 20px -5px black;
 }
 a {
   text-decoration: none;
@@ -25,7 +25,7 @@ a {
 }
 .main-navigation {
   display: flex;
-  height: 56px;
+  min-height: 55px;
 
   font-size: 14px;
   line-height: 26px;
@@ -35,12 +35,17 @@ a {
 }
 .page-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto 0;
-  padding: 0;
+  margin: 0;
+  padding: 14px 40px;
+  box-sizing: border-box;
+  width: 1200px;
+  min-height: 55px;
 }
 .page-navigation li {
-  width: 239px;
+  box-sizing: border-box;
+  padding: 1px 20px;
 
   text-align: center;
 }
@@ -53,6 +58,7 @@ a {
   margin-left: -70px;
 
   font-size: 0;
+  cursor: pointer;
 }
 .page-navigation,
 .footer-social ul {
@@ -62,6 +68,10 @@ a {
   font-weight: 700;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   color: #000000;
+  box-sizing: border-box;
+  padding: 1px 20px;
+
+  text-align: center;
 }
 .page-navigation a:hover,
 .page-navigation a:focus {
@@ -307,14 +317,16 @@ a {
   position: relative;
   z-index: 2;
 }
-@keyframes show {
+ @keyframes show {
   0% {
     transform: translateY(-395px);
     opacity: 0;
+    transform: scale(0);
   }
   30% {
     transform: translateY(-200px);
     opacity: 0.5;
+    transform: scale(0);
   }
   60% {
     transform: translateY(-100px);
@@ -346,7 +358,7 @@ a {
 }
 .modal-vision{
   visibility: visible;
-  animation: show 0.2s;
+  animation: show 0.1s;
 }
 .modal-button:hover .modal {
   visibility: hidden;
@@ -483,6 +495,7 @@ a {
 
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 }
 .modal button:hover,
 .modal button:focus {
@@ -503,7 +516,7 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -512,7 +525,7 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -549,6 +562,7 @@ a {
   line-height: 0;
 
   background-color: #81b3d2;
+  cursor: pointer;
 }
 .footer-social li:hover,
 .footer-social li:focus {
@@ -624,6 +638,7 @@ a {
 .filter-infrastructure label,
 .type-housing label {
   position: relative;
+  cursor: pointer;
 
   margin-bottom: 30px;
   margin-left: 35px;
@@ -661,8 +676,6 @@ input:checked + label::before {
 
   border: 2px solid #ffffff;
   border-radius: 2px;
-}
-.cost-monitor {
   position: relative;
 
   display: inline-block;
@@ -694,6 +707,7 @@ input:checked + label::before {
 
   background: none;
   border: none;
+  cursor: pointer;
 }
 .cost-range {
   position: relative;
@@ -702,6 +716,7 @@ input:checked + label::before {
 }
 .cost-range .scale {
   position: relative;
+  cursor: pointer;
 
   height: 2px;
 
@@ -716,6 +731,7 @@ input:checked + label::before {
 .range-toggle {
   position: absolute;
   top: 0;
+  cursor: pointer;
 
   width: 3px;
   height: 3px;
@@ -747,6 +763,7 @@ input:checked + label::before {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  cursor: pointer;
 }
 .sorting {
   font-size: 16px;
@@ -762,6 +779,7 @@ input:checked + label::before {
 .column-sorting {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .sorting-text {
   font-size: 14px;
@@ -772,8 +790,11 @@ input:checked + label::before {
 }
 .sorting-list {
   display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
+  list-style: none;
 
   list-style: none;
 }
@@ -820,6 +841,7 @@ input:checked + label::before {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  max-width: 300px;
 }
 .catalog {
   background-color: #ffffff;
@@ -919,6 +941,7 @@ input:checked + label::before {
 .column-two h3 {
   margin: 0;
   margin-bottom: 10px;
+  margin-right: 41px;
 }
 .catalog-name:hover,
 .catalog-name:focus {
