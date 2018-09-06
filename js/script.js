@@ -20,5 +20,7 @@ search.addEventListener("submit", function (evt) {
   } else if (!people || !kids) {
     evt.preventDefault();
     console.log("Форма не заполнена");
+  } else {
+    console.log("Форма заполнена")
   }
 });
