@@ -15,7 +15,6 @@
       <ul class="page-navigation">
         <li><a class="page-current" href="#info">Информация</a></li>
         <li><a href="#content">Фото и видео</a></li>
-        <li class="hidden">Логотип</li>
         <li><a href="https://goo.gl/maps/VfuRShaKjsv">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -24,12 +23,12 @@
       <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип">
     </a>
   </header>
-  <main class="conteiner">
+  <main>
     <h1 class="visually-hidden">Sedona</h1>
     <div class="main-legend">
       <img class="welcom-logo" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в СЕДОНУ">
       <div class="column-title">
-        <p class="main-title">Седона - Небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="main-title">Седона &mdash; Небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="main-subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       </div>
     </div>
@@ -39,7 +38,7 @@
         <li class="features-item">
           <h3 class="main-title">Настоящий<br>городок</h3>
           <p class="main-subtitle">&mdash; №1 &mdash;</p>
-          <p class="main-subtitle">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <p class="main-subtitle">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
         </li>
         <li class="features-item">
           <ul class="additional-features-list">
@@ -110,7 +109,7 @@
                 />
               </svg>
             </label>
-            <input type="text" name="ДАТА ЗАЕЗДА" id="dateingo" placeholder="24 Апреля 2017" pattern="[0-9]{2}\s[А-Яа-яЁё]{,9}\s[0-9]{4}" required>
+            <input type="text" name="ДАТА ЗАЕЗДА" id="dateingo" placeholder="24 Апреля 2017" pattern="[0-9]{2}\s[А-Яа-яЁё]{,9}\s[0-9]{4}">
             <label for="dateoutgo">Дата выезда:
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
@@ -119,7 +118,7 @@
                 />
               </svg>
             </label>
-            <input type="text" name="ДАТА ВЫЕЗДА" id="dateoutgo" placeholder="4 Июля 2017" pattern="[0-9]{2}\s[А-Яа-яЁё]{,9}\s[0-9]{4}" required>
+            <input type="text" name="ДАТА ВЫЕЗДА" id="dateoutgo" placeholder="4 Июля 2017" pattern="[0-9]{2}\s[А-Яа-яЁё]{,9}\s[0-9]{4}" >
             <div class="column-people">
               <label for="people">Взрослые:</label>
               <div class="people-sign">
@@ -131,7 +130,7 @@
                   <rect width="3" height="13" x="5" y="1" fill="#a9a9a9"/>
                 </svg>
               </div>
-              <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2" pattern="[0-9]{,2}" required>
+              <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2" pattern="[0-9]{,2}" >
               <label for="kids">Дети:</label>
               <div class="kids-sign">
                 <svg class="minus" width="12" height="3">
@@ -142,9 +141,9 @@
                   <rect width="3" height="13" x="5" y="1" fill="#a9a9a9"/>
                 </svg>
               </div>
-              <input type="text" name="ДЕТИ" id="kids" placeholder="1" pattern="[0-9]{,2}" required>
+              <input type="text" name="ДЕТИ" id="kids" placeholder="0" pattern="[0-9]{,2}" >
             </div>
-            <button type="submit" name="Найти гостиницу">Найти</button>
+            <button type="submit">Найти</button>
           </form>
         </div>
       </section>
@@ -191,7 +190,7 @@
       </a>
     </p>
   </footer>
-  <script src="js/script.js" async></script>
+  <script src="js/script1.js" async></script>
 </body>
 
 </html>

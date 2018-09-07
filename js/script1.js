@@ -14,10 +14,11 @@ button.addEventListener("click", function (evt) {
 });
 
 search.addEventListener("submit", function (evt) {
-  if (!dateingo || !dateoutgo) {
+  if (!dateingo && !dateoutgo) {
     evt.preventDefault();
     console.log("Форма не заполнена");
-  } else if (!people || !kids) {
+    search.classList.add("modal-error");
+  } else if (!people && !kids) {
     evt.preventDefault();
     console.log("Форма не заполнена");
   } else {
