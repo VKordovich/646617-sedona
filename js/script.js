@@ -21,7 +21,6 @@ search.addEventListener("submit", function (evt) {
     evt.preventDefault();
     console.log("Форма не заполнена");
   } else {
-    evt.preventDefault();
-    console.log("Форма заполнена")
+    console.log("Форма заполнена");
   }
 });
