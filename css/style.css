@@ -184,6 +184,7 @@ img {
 }
 .features-list > li:first-child {
   align-self: flex-start;
+  padding: 46px 50px;
 
   -ms-flex-item-align: start;
 }
@@ -270,7 +271,8 @@ img {
   margin-bottom: 13px;
 }
 .features-item:nth-of-type(3) .main-subtitle:nth-of-type(2) {
-  min-width: 309px;
+  min-width: 305px;
+  font-kerning: normal;
 }
 .features-item:nth-of-type(1)::after {
   content: "";
@@ -315,8 +317,8 @@ img {
 .search-conteiner {
   width: 520px;
   margin: 0 auto;
-  margin-bottom: 47px;
-  padding-top: 50px;
+  margin-bottom: 46px;
+  padding-top: 51px;
 }
 .search-conteiner > .main-subtitle{
   line-height: 24px;
@@ -627,9 +629,6 @@ img {
   position: absolute;
   bottom: 0;
   z-index: 3;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -653,19 +652,19 @@ img {
   -ms-flex-pack: distribute;
 }
 .footer-social {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   min-width: 240px;
-  padding-bottom: 6px;
-
+  box-sizing: border-box;
+  min-width: 240px;
   text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .hotels-footer .footer-social {
   padding-bottom: 2px;
 }
 .hashtag {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-width: 240px;
   padding-bottom: 10px;
   padding-left: 2px;
@@ -674,7 +673,7 @@ img {
   line-height: 26px;
   text-align: center;
   margin: 0;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 .hotels-footer .hashtag {
   padding-bottom: 7px;
@@ -738,8 +737,7 @@ img {
   min-width: 240px;
   padding-right: 20px;
   margin: 0;
-  padding-bottom: 6px;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 .hotels-footer .footer-copyright {
   padding: 0;
