@@ -103,7 +103,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 .page-current {
-  color: #766357;         /* что это  */
+  color: #766357;
 }
 .main-title {
   margin: 0;
@@ -889,6 +889,7 @@ input:checked + label::before {
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
   width: 314px;
   height: 32px;
   margin-bottom: 20px;
@@ -1246,6 +1247,7 @@ input:checked + label::before {
 }
 .catalog-cost span {
   display: inline-block;
+  vertical-align: top;
   min-width: 100px;
   padding-right: 15px;
 }
