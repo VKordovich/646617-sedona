@@ -5,6 +5,7 @@ var dateoutgo = document.querySelector("#dateoutgo");
 var people = document.querySelector("#people");
 var kids = document.querySelector("#kids");
 var search = document.querySelector(".modal-search");
+modal.classList.toggle("modal-hidden");
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();

@@ -454,14 +454,14 @@ img {
 
   background-color: #ffffff;
 }
-.modal-vision {
+.modal-hidden{
   visibility: hidden;
+}
+.modal-vision {
+  visibility: visible;
 
   -webkit-animation: show 0.1s;
           animation: show 0.1s;
-}
-.modal-button:hover .modal {
-  visibility: hidden;
 }
 .modal-container {
   width: 458px;
