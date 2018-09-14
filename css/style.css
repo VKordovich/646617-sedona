@@ -72,7 +72,7 @@ img {
 }
 .page-navigation li:nth-of-type(4),
 .page-navigation li:nth-of-type(3) {
-  text-align: end;
+  text-align: right;
 }
 
 .main-logo {
@@ -102,12 +102,13 @@ img {
 .page-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.page-current {
+.page-navigation .page-current {
   color: #766357;
 }
 .main-title {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0px 52px;
 
   font-weight: 700;
   font-size: 21px;
@@ -141,7 +142,7 @@ img {
 
   width: 1200px;
   height: 60px;
-  margin-bottom: -3px;                              /*почему ты такой минус*/
+  margin-bottom: -3px;
 
   background-image: url("../img/intro-mask.svg");
 }
@@ -246,19 +247,18 @@ img {
   width: 90px;
   height: 90px;
 }
-/* При переполнении изображение двидется вместе с блоком */
 .features-item:nth-of-type(2) .additional-features-item:nth-of-type(1)::before {
   top: 60px;
   left: 163px;
 
-  background-image: url(../img/icon-1.svg);
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
 }
 .features-item:nth-of-type(2) .additional-features-item:nth-of-type(2)::before {
   top: 60px;
   left: 164px;
 
-  background-image: url(../img/icon-3.svg);
+  background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
 }
 .features-item:nth-of-type(2) .additional-features-item:nth-of-type(3)::before {
@@ -369,6 +369,7 @@ img {
 }
 .modal-window {
   position: relative;
+  min-height: 593px;
 }
 .map img {
   position: absolute;
@@ -443,7 +444,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 568px;
-  min-height: 395px;      /* ВОПРос  */
+  min-height: 395px;
   margin: 0 auto;
   margin-left: -284px;
 
@@ -452,10 +453,9 @@ img {
   line-height: 26px;
 
   background-color: #ffffff;
-  visibility: hidden;
 }
 .modal-vision {
-  visibility: visible;
+  visibility: hidden;
 
   -webkit-animation: show 0.1s;
           animation: show 0.1s;
@@ -497,11 +497,7 @@ img {
           animation: inputForm 0.2s;
 }
 .in-calendar,
-.out-calendar,
-.people-plus,
-.kids-plus,
-.people-minus,
-.kids-minus {
+.out-calendar {
   position: absolute;
 
   width: 21px;
@@ -520,21 +516,33 @@ img {
   top: 26%;
   right: 2%;
 }
-.people-plus {
-  top: 11%;
-  left: 43%;
+.button-people,
+.button-kids{
+  display: flex;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  margin-bottom: 54px;
 }
-.people-minus {
-  top: 6%;
-  left: 26%;
+.people-plus,
+.kids-plus{
+  width: 21px;
+  height: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-top: 9px;
 }
-.kids-plus {
-  top: 11%;
-  right: 1%;
-}
-.kids-minus {
-  top: 6%;
-  right: 18%;
+.kids-minus,
+.people-minus{
+  width: 21px;
+  height: 22px;
+  padding: 0;
+  padding-top: 5px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .minus:hover rect,
 .minus:focus rect {
@@ -569,6 +577,7 @@ img {
   width: 240px;
   margin-bottom: 29px;
   padding: 4px 33px 4px 10px;
+  min-height: 26px;
 
   font-weight: inherit;
   font-size: inherit;
@@ -596,15 +605,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 456px;
+  width: 458px;
 }
 .column-people input[type="text"] {
-  width: 10px;
-  margin-bottom: 54px;
-  padding-top: 5px;
-  padding-right: 22px;
-  padding-left: 18px;
-
+  width: 21px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-right: 15px;
+  padding-left: 13px;
   text-align: center;
 }
 .column-people input[type="text"]:nth-of-type(2) {
@@ -614,18 +622,17 @@ img {
 }
 .column-people label:nth-of-type(2) {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-right: 27px;
-
+  box-sizing: border-box;
+  padding-right: 43px;
+  margin-left: 33px;
   text-align: right;
 }
-.modal-search input[type="text"]:hover,
-.modal-search input[type="text"]:focus {
+.modal-search input[type="text"]:hover {
   background-color: #ebebeb;
-  outline: none;
 }
-.modal-search input[type="text"]:active {
+.modal-search input[type="text"]:focus {
   background-color: #ffffff;
+  outline: none;
 }
 .modal-find {
   display: block;
@@ -810,7 +817,7 @@ img {
   background-image: none;
 }
 .filter {
-  background-image: url(../img/background-hotels.jpg);
+  background-image: url("../img/background-hotels.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   border-top: 1px solid transparent;
@@ -868,7 +875,7 @@ img {
   height: 25px;
   margin-top: -3px;
 
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 input:checked + label::before {
@@ -980,6 +987,7 @@ input:checked + label::before {
   margin: 0;
   margin-left: 84px;
   padding: 8px 34px;
+  max-width: 128px;
 
   color: #ffffff;
 
@@ -998,7 +1006,6 @@ input:checked + label::before {
 .sorting .container {
   margin: 0 auto;
 }
-/* .................................................................how does it work????????????? */
 .column-sorting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1014,7 +1021,7 @@ input:checked + label::before {
 }
 .sorting-text {
   font-size: 12px;
-  line-height: 21px;
+  line-height: 18px;
 }
 .column-sorting > .sorting-text {
   margin-right: 40px;
@@ -1034,7 +1041,6 @@ input:checked + label::before {
   max-width: 300px;
   padding: 0;
 
-  list-style: none;
   list-style: none;
 
   -webkit-box-align: center;
@@ -1123,7 +1129,7 @@ input:checked + label::before {
   height: 17px;
 
   background-color: transparent;
-  background-image: url(../img/star.svg);
+  background-image: url("../img/star.svg");
   background-repeat: no-repeat;
 }
 .catalog-stars {

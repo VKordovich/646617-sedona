@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="page-navigation">
-        <li><a class="page-current" href="#info">Информация</a></li>
+        <li><a href="#info">Информация</a></li>
         <li><a href="#content">Фото и видео</a></li>
         <li><a href="https://goo.gl/maps/VfuRShaKjsv">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
@@ -36,7 +36,7 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
         <li class="features-item">
-          <h3 class="main-title">Настоящий<br>городок</h3>
+          <h3 class="main-title">Настоящиий городок</h3>
           <p class="main-subtitle">&mdash; №1 &mdash;</p>
           <p class="main-subtitle">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
         </li>
@@ -64,17 +64,17 @@
         <li class="features-item">
           <ul class="additional-features-list">
             <li class="additional-features-item">
-              <h3 class="main-title">Небольшая<br>площадь</h3>
+              <h3 class="main-title">Небольшая площадь</h3>
               <p class="main-subtitle">&mdash; №3 &mdash;</p>
               <p class="main-subtitle">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="additional-features-item">
-              <h3 class="main-title">Красивая<br>дорога</h3>
+              <h3 class="main-title">Красивая дорога</h3>
               <p class="main-subtitle">&mdash; №4 &mdash;</p>
               <p class="main-subtitle">Ехать в седону из лас вегаса совсем не скучно!</p>
             </li>
             <li class="additional-features-item">
-              <h3 class="main-title">Мало<br>туристов</h3>
+              <h3 class="main-title">Мало туристов</h3>
               <p class="main-subtitle">&mdash; №5 &mdash;</p>
               <p class="main-subtitle">Большинство едет в Гранд каньон и толпится там</p>
             </li>
@@ -86,7 +86,7 @@
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <div class="search-conteiner">
         <p class="search-title">Заинтересовались?</p>
-        <p class="main-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
+        <p class="main-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
       </div>
       <a class="modal-button" href="searchHotels.html">Поиск гостиницы в седоне</a>
@@ -121,25 +121,22 @@
             </button>
             <div class="column-people">
               <label for="people">Взрослые:</label>
+              <div class="button-people">
+              <button class="people-minus">
+                <svg class="minus" width="12" height="3">
+                    <rect width="12" height="3" fill="#a9a9a9" />
+                  </svg>
+              </button>
+                <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2" pattern="[0-9]{,2}" required>
                 <button class="people-plus">
-                    <svg class="plus" width="13" height="15">
-                        <rect width="13" height="3" x="0" y="6" fill="#a9a9a9" />
-                        <rect width="3" height="13" x="5" y="1" fill="#a9a9a9" />
-                      </svg>
-                </button>
-                <button class="people-minus">
-                    <svg class="minus" width="12" height="3">
-                        <rect width="12" height="3" fill="#a9a9a9" />
-                      </svg>
-                </button>
-              <input type="text" name="ВЗРОСЛЫЕ" id="people" placeholder="2" pattern="[0-9]{,2}" required>
+                  <svg class="plus" width="13" height="15">
+                      <rect width="13" height="3" x="0" y="6" fill="#a9a9a9" />
+                      <rect width="3" height="13" x="5" y="1" fill="#a9a9a9" />
+                    </svg>
+              </button>
+            </div>
               <label for="kids">Дети:</label>
-                  <button class="kids-plus">
-                      <svg class="plus" width="13" height="15">
-                          <rect width="13" height="3" x="0" y="6" fill="#a9a9a9" />
-                          <rect width="3" height="13" x="5" y="1" fill="#a9a9a9" />
-                        </svg>
-                  </button>
+              <div class="button-kids">
                   <button class="kids-minus">
                       <svg class="minus" width="12" height="3">
                           <rect width="12" height="3" fill="#a9a9a9" />
@@ -147,6 +144,13 @@
 
                   </button>
               <input type="text" name="ДЕТИ" id="kids" placeholder="0" pattern="[0-9]{,2}" required>
+              <button class="kids-plus">
+                <svg class="plus" width="13" height="15">
+                    <rect width="13" height="3" x="0" y="6" fill="#a9a9a9" />
+                    <rect width="3" height="13" x="5" y="1" fill="#a9a9a9" />
+                  </svg>
+            </button>
+          </div>
             </div>
             <button class="modal-find" type="submit">Найти</button>
           </form>
