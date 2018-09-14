@@ -329,7 +329,7 @@ img {
 .search-conteiner {
   width: 520px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   padding-top: 50px;
 }
 .search-conteiner > .main-subtitle {
@@ -466,7 +466,7 @@ img {
 .modal-container {
   width: 458px;
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 54px;
   padding-bottom: 42px;
 }
 .modal-search {
@@ -509,7 +509,7 @@ img {
   outline: none;
 }
 .in-calendar {
-  top: 2%;
+  top: 3%;
   right: 2%;
 }
 .out-calendar {
@@ -521,25 +521,26 @@ img {
   display: flex;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 .people-plus,
 .kids-plus{
   width: 21px;
   height: 28px;
-  padding: 0;
+  padding: 0px;
   background-color: transparent;
   border: none;
   outline: none;
-  padding-top: 9px;
+  padding-top: 10px;
+  padding-right: 8px;
 }
 .kids-minus,
 .people-minus{
   width: 21px;
   height: 22px;
   padding: 0;
-  padding-top: 5px;
-
+  padding-top: 6px;
+  padding-left: 9px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -575,7 +576,7 @@ img {
 .modal-search input[type="text"] {
   flex-grow: 1;
   width: 240px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding: 4px 33px 4px 10px;
   min-height: 26px;
 
@@ -608,10 +609,10 @@ img {
   width: 458px;
 }
 .column-people input[type="text"] {
-  width: 21px;
+  width: 37px;
   margin-bottom: 0;
-  padding-top: 0;
-  padding-right: 15px;
+  padding-top: 2px;
+  padding-right: 13px;
   padding-left: 13px;
   text-align: center;
 }
@@ -623,8 +624,8 @@ img {
 .column-people label:nth-of-type(2) {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-right: 43px;
-  margin-left: 33px;
+  padding-right: 26px;
+  margin-left: 6px;
   text-align: right;
 }
 .modal-search input[type="text"]:hover {
