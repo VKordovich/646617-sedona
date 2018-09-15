@@ -5,6 +5,7 @@ var dateoutgo = document.querySelector("#dateoutgo");
 var people = document.querySelector("#people");
 var kids = document.querySelector("#kids");
 var search = document.querySelector(".modal-search");
+var forms = search.querySelectorAll("input[type=text]");
 modal.classList.toggle("modal-hidden");
 
 button.addEventListener("click", function (evt) {
@@ -14,14 +15,26 @@ button.addEventListener("click", function (evt) {
   dateingo.focus();
 });
 
-search.addEventListener("submit", function (evt) {
-  if (!dateingo || !dateoutgo) {
-    evt.preventDefault();
+search.addEventListener("click", function(event) {
+  if(!dateingo.value){
+    event.preventDefault();
     console.log("Форма не заполнена");
-  } else if (!people || !kids) {
-    evt.preventDefault();
+    dateingo.classList.add("modal-error");
+  } else if(!dateoutgo.value){
+    event.preventDefault();
     console.log("Форма не заполнена");
-  } else {
+    dateoutgo.classList.add("modal-error");
+  } else if(!people.value){
+    event.preventDefault();
+    console.log("Форма не заполнена");
+    people.classList.add("modal-error");
+  } else if(!kids.value){
+    event.preventDefault();
+    console.log("Форма не заполнена");
+    kids.classList.add("modal-error");
+  } else{
     console.log("Форма заполнена");
   }
-});
+
+  });
+
