@@ -773,7 +773,6 @@ img {
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   width: 150px;
   margin: 0 auto;
@@ -793,6 +792,7 @@ img {
   align-items: center;
   width: 46px;
   height: 48px;
+  margin-right: 6px;
   margin-bottom: 6px;
 
   font-size: 0;
@@ -805,6 +805,9 @@ img {
   -webkit-box-pack: center;
   -ms-flex-align: center;
   -ms-flex-pack: center;
+}
+.footer-social li:nth-child(3n) {
+  margin-right: 0;
 }
 .footer-social li:hover,
 .footer-social li:focus {
@@ -867,9 +870,9 @@ img {
 }
 .filter {
   background-color: #6986a1;
-  background-image: url("../img/background-hotels.jpg");
+  background-image: url(../img/background-hotels.jpg);
   background-repeat: no-repeat;
-  background-position: 0 -60px;
+  background-size: cover;
   border-top: 1px solid white;
 }
 .filter form {
