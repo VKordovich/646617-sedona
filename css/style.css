@@ -50,12 +50,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+      flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1200px;
   min-height: 55px;
   margin: 0;
   padding: 14px 72px;
+
+  -ms-flex-wrap: wrap;
 }
 .page-navigation li {
   flex-basis: 240px;
@@ -712,7 +715,8 @@ img {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 37px 0;
+  padding: 30px 0;
+  padding-top: 35px;
 
   background-color: rgba(255, 255, 255, 0.9);
 
@@ -751,8 +755,8 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 240px;
-  margin: 0;
-  padding-top: 10px;
+  margin: auto 0;
+  padding-top: 0;
   padding-bottom: 10px;
   padding-left: 2px;
 
@@ -789,6 +793,7 @@ img {
   align-items: center;
   width: 46px;
   height: 48px;
+  margin-bottom: 6px;
 
   font-size: 0;
   line-height: 0;
@@ -821,10 +826,11 @@ img {
   justify-content: flex-end;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 240px;
-  margin: 0;
-  padding-top: 4px;
+  margin: auto 0;
   padding-right: 20px;
+  padding-bottom: 8px;
 
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -860,10 +866,11 @@ img {
   background-image: none;
 }
 .filter {
+  background-color: #6986a1;
   background-image: url("../img/background-hotels.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
-  border-top: 1px solid transparent;
+  background-position: 0 -60px;
+  border-top: 1px solid white;
 }
 .filter form {
   display: -webkit-box;
@@ -1040,6 +1047,11 @@ input:checked + label::before {
   border-radius: 2px;
   cursor: pointer;
 }
+.cost-hotel button:hover {
+  color: black;
+
+  background-color: white;
+}
 .sorting {
   font-size: 16px;
   line-height: 21px;
@@ -1132,7 +1144,7 @@ input:checked + label::before {
 .sorting-up {
   margin-right: 8px;
 }
-.current-choice svg:active path {
+.current-choice svg path {
   fill: #81b3d2;
 }
 .sorting-total,
