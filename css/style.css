@@ -577,7 +577,7 @@ img {
 }
 .kids-minus,
 .people-minus {
-  width: 21px;
+  width: 28px;
   height: 35px;
   padding: 0;
 
@@ -649,10 +649,10 @@ img {
   width: 458px;
 }
 .column-people input[type="text"] {
-  width: 37px;
+  width: 28px;
   margin-bottom: 0;
   padding-top: 2px;
-  padding-right: 13px;
+  padding-right: 15px;
   padding-left: 13px;
 
   text-align: center;
